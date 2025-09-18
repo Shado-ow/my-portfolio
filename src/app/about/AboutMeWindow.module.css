@@ -1,0 +1,21 @@
+.window {
+  position: fixed;
+  left: 50;
+  bottom: 0;
+  width: 100vw;
+  height: 1154px;
+  display: flex;
+  align-items: center;
+}
+
+.closeButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.linkButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+}

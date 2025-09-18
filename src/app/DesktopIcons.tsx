@@ -73,7 +73,13 @@ export default function DesktopIcons() {
       ))}
       {rightIcons.map((icon, i) => (
         <div key={icon.label} className={styles.icon} style={icon.style}>
-          <Image src={icon.src} alt={icon.label} width={icon.width} height={icon.height} />
+          {icon.label === 'About Me' ? (
+            <a href="/about">
+              <Image src={icon.src} alt={icon.label} width={icon.width} height={icon.height} />
+            </a>
+          ) : (
+            <Image src={icon.src} alt={icon.label} width={icon.width} height={icon.height} />
+          )}
         </div>
       ))}
     </>
