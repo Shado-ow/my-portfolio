@@ -22,7 +22,7 @@ export default function AboutMeWindow() {
 
     {/* About Me Text */}
       <div className={styles.aboutText}>
-        <p>
+        <p style={{ cursor: 'url(/cursors/text.png), auto' }}>
           I'm a 4th-year B.Tech student in Computer Science at PES University. I
           love exploring new technologies and problem-solving and find it both
           challenging and fun. Alongside coding, I'm passionate about travelling
@@ -36,19 +36,19 @@ export default function AboutMeWindow() {
       {/* Link Buttons */}
       <div className={styles.gitlinks}>
         <a href="https://github.com/Shado-ow" target="_blank" rel="noopener noreferrer">
-          <Image src="/aboutpage/github.png" alt="GitHub" width={168} height={40} style={{ cursor: 'pointer' }} />
+          <Image src="/aboutpage/github.png" alt="GitHub" width={168} height={40} style={{ cursor: 'url(/cursors/hand.png), auto' }} />
         </a>
       </div>
 
       <div className={styles.linklinks}>
         <a href="https://www.linkedin.com/in/sanya-vashist-a7a592276/" target="_blank" rel="noopener noreferrer">
-          <Image src="/aboutpage/linkedin.png" alt="LinkedIn" width={102} height={40} style={{ cursor: 'pointer' }} />
+          <Image src="/aboutpage/linkedin.png" alt="LinkedIn" width={102} height={40} style={{ cursor: 'url(/cursors/hand.png), auto' }} />
         </a>
       </div>
 
       <div className={styles.maillinks}>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanyavashist794@gmail.com" target="_blank" rel="noopener noreferrer">
-          <Image src="/aboutpage/email.png" alt="Email" width={180} height={40} style={{ cursor: 'pointer' }} />
+          <Image src="/aboutpage/email.png" alt="Email" width={180} height={40} style={{ cursor: 'url(/cursors/hand.png), auto' }} />
         </a>
       </div>
     </div>

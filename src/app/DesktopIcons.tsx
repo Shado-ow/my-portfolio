@@ -75,7 +75,7 @@ export default function DesktopIcons() {
         <div key={icon.label} className={styles.icon} style={icon.style}>
           {icon.label === 'About Me' ? (
             <a href="/about">
-              <Image src={icon.src} alt={icon.label} width={icon.width} height={icon.height} />
+              <Image src={icon.src} alt={icon.label} width={icon.width} height={icon.height} style={{ cursor: '-moz-grab' }} />
             </a>
           ) : (
             <Image src={icon.src} alt={icon.label} width={icon.width} height={icon.height} />
