@@ -3,7 +3,7 @@
   left: 0;
   bottom: 0;
   width: 100vw;
-  height: 48px;
+  height: 54px;
   background: #c0c0c0;
   border-top: 2px solid #fff;
   display: flex;
@@ -14,13 +14,9 @@
 .startButton {
   display: flex;
   align-items: center;
-  background: #e0e0e0;
   border: 2px outset #fff;
-  padding: 0 12px;
-  height: 36px;
+  padding: 0;
   margin-left: 8px;
-  font-weight: bold;
-  font-size: 18px;
   gap: 8px;
   cursor: pointer;
 }
@@ -29,8 +25,8 @@
   background: #fff;
   border: 2px inset #888;
   height: 28px;
-  width: 180px;
-  margin-left: 12px;
+  width: 195px;
+  margin-left: 10px;
 }
 
 .spacer {
@@ -46,4 +42,5 @@
   font-size: 18px;
   display: flex;
   align-items: center;
+  font-family: W95FA;
 }

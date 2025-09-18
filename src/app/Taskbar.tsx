@@ -22,7 +22,7 @@ export default function Taskbar() {
   return (
     <div className={styles.taskbar}>
       <div className={styles.startButton}>
-        <Image src="/homepage/startButton.png" alt="Start" width={48} height={48} />
+        <Image src="/homepage/startButton.png" alt="Start" width={80} height={90} />
       </div>
       <div className={styles.searchBar}></div>
       <div className={styles.spacer}></div>

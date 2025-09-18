@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'W95FA';
+  src: url('/fonts/W95FA/w95fa.woff2') format('woff2'),
+       url('/fonts/W95FA/w95fa.woff') format('woff'),
+       url('/fonts/W95FA/W95FA.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 @import "tailwindcss";
 
 :root {
@@ -19,6 +27,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'W95FA'; */
   overflow: hidden;
 }
 
