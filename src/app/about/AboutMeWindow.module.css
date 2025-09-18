@@ -1,21 +1,46 @@
 .window {
-  position: fixed;
-  left: 50;
-  bottom: 0;
-  width: 100vw;
-  height: 1154px;
-  display: flex;
-  align-items: center;
+  position: relative;
+  width: 450px;     /* fixed container width (like Win95 window) */
+  height: 570px;    /* fixed container height */
+  /* background-color: white;
+  border: 2px solid black; */
+  margin: 0px auto;   /* center horizontally */
 }
 
 .closeButton {
-  position: relative;
-  display: flex;
-  align-items: center;
+  position: absolute;
+  top: 6px;
+  right: 7px;
 }
 
-.linkButton {
-  position: relative;
-  display: flex;
-  align-items: center;
+.gitlinks {
+  position: absolute;
+  bottom: 16px;
+  left: 10px
 }
+
+.linklinks {
+  position: absolute;
+  bottom: 16px;
+  left: 109px
+}
+
+.maillinks {
+  position: absolute;
+  bottom: 16px;
+  left: 210px
+}
+
+.aboutText {
+  width: 420px;
+  position: absolute;
+  bottom: 60px;
+  left: 15px;
+  font-size: 19px;
+  font-family: W95FA;
+  line-height: 1.6;
+  color: black; /* or white depending on background */
+  text-align: left; /* or left if you prefer */
+  line-height: 1.3;
+}
+

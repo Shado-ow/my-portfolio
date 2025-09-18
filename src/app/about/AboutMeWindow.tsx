@@ -1,23 +1,55 @@
-import Image from 'next/image';
-import styles from './AboutMeWindow.module.css';
+import Image from "next/image";
+import styles from "./AboutMeWindow.module.css";
 
 export default function AboutMeWindow() {
   return (
-    <div style={{ position: 'relative', width: 200, height: 200  }}>
-      <div className={styles.window}>
-        <Image src="/aboutpage/about_me.png" alt="About Me" width={450} height={200} style={{  position: 'absolute',marginTop: '403px', marginLeft: '450px', zIndex: 2}} />
-      </div>
+    <div className={styles.window}>
+      {/* Main About Me image */}
+      <Image
+        src="/aboutpage/about_me.png"
+        alt="About Me"
+        width={450}
+        height={200}
+        style={{ margin: "50px auto", display: "block" }}
+      />
+
+      {/* Close Button */}
       <div className={styles.closeButton}>
-        <Image src="/aboutpage/closeButton.png" alt="Close" width={25} height={20} style={{  position: 'absolute',marginTop: '233px', marginLeft: '919px', zIndex: 1}} />
+        <a href="/">
+          <Image src="/aboutpage/closeButton.png" alt="Close" width={25} height={20} style={{ cursor: 'pointer' }} />
+        </a>
       </div>
-      <div className={styles.linkbutton}>
-        <Image src="/aboutpage/linkedin.png" alt="LinkedIn" width={101} height={200} style={{  position: 'absolute',marginTop: '618px', marginLeft: '609px', zIndex: 0}} />
+
+    {/* About Me Text */}
+      <div className={styles.aboutText}>
+        <p>
+          I'm a 4th-year B.Tech student in Computer Science at PES University. I
+          love exploring new technologies and problem-solving and find it both
+          challenging and fun. Alongside coding, I'm passionate about travelling
+          to new places and enjoy making small crafty things. When I'm not
+          coding, I'm probably rewatching <em>The Office</em> for the third
+          time.
+        </p>
       </div>
-      <div className={styles.linkbutton}>
-        <Image src="/aboutpage/github.png" alt="GitHub" width={169} height={200} style={{  position: 'absolute',marginTop: '618px', marginLeft: '508px', zIndex: 0}} />
+
+
+      {/* Link Buttons */}
+      <div className={styles.gitlinks}>
+        <a href="https://github.com/Shado-ow" target="_blank" rel="noopener noreferrer">
+          <Image src="/aboutpage/github.png" alt="GitHub" width={168} height={40} style={{ cursor: 'pointer' }} />
+        </a>
       </div>
-      <div className={styles.linkbutton}>
-        <Image src="/aboutpage/email.png" alt="Email" width={180} height={200} style={{  position: 'absolute',marginTop: '618px', marginLeft: '710px', zIndex: 0}} />
+
+      <div className={styles.linklinks}>
+        <a href="https://www.linkedin.com/in/sanya-vashist-a7a592276/" target="_blank" rel="noopener noreferrer">
+          <Image src="/aboutpage/linkedin.png" alt="LinkedIn" width={102} height={40} style={{ cursor: 'pointer' }} />
+        </a>
+      </div>
+
+      <div className={styles.maillinks}>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanyavashist794@gmail.com" target="_blank" rel="noopener noreferrer">
+          <Image src="/aboutpage/email.png" alt="Email" width={180} height={40} style={{ cursor: 'pointer' }} />
+        </a>
       </div>
     </div>
   );
